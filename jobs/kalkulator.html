@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Задание 1 - Калькулятор</title>
+<link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+<header>
+    <div class="menu">
+        <ul>
+                <li><a href="../../index.html" class="p_menu">Главная</a></li>
+                <li><a href="../../obo_mne/glav.html" class="p_menu">Обо мне</a></li>
+                <li><a href="../../jobs/glav.html" class="p_menu">Работы</a></li>
+                <li><a href="../../contacs/glav.html" class="p_menu">Контакты</a></li>
+        </ul>
+    </div>
+</header>
+<main>
+    <h1>Задание №1</h1>
+    <h2>Калькулятор</h2>
+    <div class="calculator">
+            <ul>
+                <li>
+                    <input type="text" id="display" readonly>
+                </li>
+            </ul>
+            <ul>
+                <li><button onclick="appendToDisplay('1')">1</button>
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <button onclick="appendToDisplay('3')">3</button>
+                    <button onclick="appendToDisplay('-')">-</button></li>
+            </ul>
+            <ul>
+                <li><button onclick="appendToDisplay('4')">4</button>
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <button onclick="appendToDisplay('6')">6</button>
+                    <button onclick="appendToDisplay('*')">*</button></li>
+            </ul>
+            <ul>
+                <li><button onclick="appendToDisplay('7')">7</button>
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <button onclick="appendToDisplay('9')">9</button>
+                    <button onclick="appendToDisplay('+')">+</button></li>
+            </ul>
+            <ul>
+                <li>
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="appendToDisplay('.')">.</button>
+                    <button onclick="calculate()">=</button>
+                    <button onclick="clearDisplay()">C</button></li>
+            </ul>       
+    </div>
+    <script src="../../script.js"></script>
+</main>
+</body>
+</html>
